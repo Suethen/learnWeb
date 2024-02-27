@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @media screen and (max-width: 1024px) {
+      html {
+        font-size: 42.66px !important
+      }
+    }
+
+    @media screen and (min-width: 1920px) {
+      html {
+        font-size: 80px !important
+      }
+    }
+
+    .box {
+      /* 将 200px 转换为 2.5rem (当前基准字号为 80px, 参考配置文档修改  */
+      width: 2.5rem;
+      height: 2.5rem;
+      background: pink;
+    }
+  </style>
+  <script src="js/flexible.js"></script>
+  <script src="js/echarts.js"></script>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
